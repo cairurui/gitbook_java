@@ -11,27 +11,40 @@
    
 3. servlet的初始化参数配置
 
-```
-<servlet>
-    <servlet-name>ConfigDemo</servlet-name>
-    <servlet-class>com.xiaocai.config.ConfigDemo</servlet-class>
-    <!-- 初始参数： 这些参数会在加载web应用的时候，封装到ServletConfig对象中 -->
-    <init-param>
-    	<param-name>pathA</param-name>
-    	<param-value>e:/a.txt</param-value>
-    	<param-name>pathB</param-name>
-    	<param-value>e:/b.txt</param-value>
-    </init-param>
-  </servlet>
-```
+    ```
+    <servlet>
+        <servlet-name>ConfigDemo</servlet-name>
+        <servlet-class>com.xiaocai.config.ConfigDemo</servlet-class>
+        <!-- 初始参数： 这些参数会在加载web应用的时候，封装到ServletConfig对象中 -->
+	<init-param>
+		<param-name>pathA</param-name>
+		<param-value>e:/a.txt</param-value>
+	</init-param>
+	<init-param>
+		<param-name>pathB</param-name>
+		<param-value>e:/b.txt</param-value>
+	</init-param>
+     </servlet>
+    ```
 
+4. ServletConfig 相关的api
 
-    java.lang.String getInitParameter(java.lang.String name)  根据参数名获取参数值
-    java.util.Enumeration getInitParameterNames()    获取所有参数
-    ServletContext getServletContext()     得到servlet上下文对象
-    java.lang.String getServletName()       得到servlet的名称
+    * String getInitParameter(java.lang.String name)  根据参数名获取参数值
+    * Enumeration getInitParameterNames()    获取所有参数
+    * ServletContext getServletContext()     得到servlet上下文对象
+    * String getServletName()       得到servlet的名称
     
-    
+    ```
+    Enumeration<String> initParameterNames = this.getServletConfig().getInitParameterNames();
+    while (initParameterNames.hasMoreElements()) {
+    	String name = (String) initParameterNames.nextElement();
+    	String value = this.getServletConfig().getInitParameter(name);
+    	System.out.println("name:"+name+"  value:"+value);
+    }
+    // 输出：
+    // name:pathA  value:e:/a.txt
+    // name:pathB  value:e:/b.txt
+    ```
     
     
 
