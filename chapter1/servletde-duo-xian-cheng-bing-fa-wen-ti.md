@@ -11,3 +11,4 @@
 				 HttpServletResponse 响应对象： 设置响应对象
 				 ServletConfig对象    servlet配置对象
 				 ServletContext对象； servlet的上下文对象
+				
