@@ -9,4 +9,5 @@
   * [转发和重定向的区别](chapter1/zhuan-fa-he-zhong-ding-xiang-de-qu-bie.md)
 * [会话技术](13-hui-hua-ji-zhu.md)
   * [cookie 入门](13-hui-hua-ji-zhu/cookie-ru-men.md)
+  * [cookie 原理](13-hui-hua-ji-zhu/cookie-yuan-li.md)
 
