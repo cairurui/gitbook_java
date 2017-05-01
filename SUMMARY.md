@@ -10,4 +10,5 @@
 * [会话技术](13-hui-hua-ji-zhu.md)
   * [cookie 入门](13-hui-hua-ji-zhu/cookie-ru-men.md)
   * [cookie 原理](13-hui-hua-ji-zhu/cookie-yuan-li.md)
+  * [cookie 的细节](13-hui-hua-ji-zhu/cookie-de-xi-jie.md)
 

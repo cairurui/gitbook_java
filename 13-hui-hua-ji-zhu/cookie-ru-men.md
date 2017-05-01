@@ -60,6 +60,5 @@
     输出信息:
     name:name  value:xiaocai
     name:age  value:25
-    name:_ga  value:GA1.1.198307759.1489979762
 
 ```
