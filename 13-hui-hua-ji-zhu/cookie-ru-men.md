@@ -43,3 +43,18 @@
     Set-Cookie:name=xiaocai
     Set-Cookie:age=25
 ```
+
+---
+
+获取
+
+```
+    Cookie[] cookies = request.getCookies();
+    for (int i = 0; i < cookies.length; i++) {
+    	Cookie cookie = cookies[i];
+    	String name = cookie.getName();
+    	String value = cookie.getValue();
+    	System.out.println("name:" + name + "  value:" + value);
+    }
+
+```
