@@ -11,4 +11,7 @@
   * [cookie 入门](13-hui-hua-ji-zhu/cookie-ru-men.md)
   * [cookie 原理](13-hui-hua-ji-zhu/cookie-yuan-li.md)
   * [cookie 的细节](13-hui-hua-ji-zhu/cookie-de-xi-jie.md)
+  * [session 引入](13-hui-hua-ji-zhu/session-ji-zhu.md)
+  * [session 核心技术](13-hui-hua-ji-zhu/session-he-xin-ji-zhu.md)
+  * [session 细节](13-hui-hua-ji-zhu/session-xi-jie.md)
 
